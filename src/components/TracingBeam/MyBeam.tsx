@@ -41,7 +41,7 @@ export function MyBeam() {
                   alt="blog thumbnail"
                   height="300"
                   width="500"
-                  className="rounded-lg max-w-80 mb-10 object-cover mx-auto"
+                  className="rounded-lg max-h-72 mb-10 object-cover mx-auto"
                 />
               )}
               {item.description}
