@@ -10,7 +10,7 @@ import { LINKEDIN_URL, RESUME_URL } from "data/constants";
 export function MyCard() {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 dark:bg-black dark:bg-opacity-20 relative group/card dark:hover:shadow-2xl dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+      <CardBody className="bg-gray-50 dark:bg-black dark:bg-opacity-50 relative group/card dark:hover:shadow-2xl dark:border-white/[0] md:dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
         <CardItem translateZ="100" className="w-full">
           <Image
             src="/pp.png"
@@ -77,6 +77,7 @@ export function MyCard() {
             >
               <a href={LINKEDIN_URL} target="_blank">
                 <Image
+                  priority={false}
                   width={24}
                   height={24}
                   src="/icons/linkedin.webp"

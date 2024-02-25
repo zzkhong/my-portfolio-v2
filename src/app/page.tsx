@@ -4,16 +4,19 @@ import { MyParallax } from "components/HeroParallax/MyParallax";
 import { Meteors } from "components/Meteor";
 import { MyBeam } from "components/TracingBeam/MyBeam";
 import { MyTypewriter } from "components/Typewriter/MyTypewriter";
+import { getCurrentYear } from "utils/time";
 
 export default function Home() {
   return (
     <>
       <main className="flex flex-col items-center justify-between">
         {/* Meteor deco */}
-        <div>{/* <Meteors number={20} /> */}</div>
+        <div>
+          <Meteors number={getCurrentYear() - 1996} />
+        </div>
 
         {/* Intro Banner */}
-        <div className="w-full min-h-screen pt-20">
+        <div className="w-full min-h-screen pt-24 lg:pt-48">
           <MyCard />
           {/* <MyParallax /> */}
         </div>

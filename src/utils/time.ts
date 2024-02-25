@@ -4,3 +4,7 @@ export function getDayOfWeek(): number {
 
   return dayOfWeek < 0 ? 0 : dayOfWeek;
 }
+
+export function getCurrentYear(): number {
+  return new Date().getFullYear();
+}

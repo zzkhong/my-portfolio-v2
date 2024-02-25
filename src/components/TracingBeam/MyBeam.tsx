@@ -7,7 +7,7 @@ import { history } from "data/history";
 
 export function MyBeam() {
   return (
-    <TracingBeam className="">
+    <TracingBeam>
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
         {history.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">

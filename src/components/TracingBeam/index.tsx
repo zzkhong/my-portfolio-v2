@@ -39,6 +39,7 @@ export const TracingBeam = ({
     return scrollYProgressVelocity.onChange((latestVelocity) => {
       setVelocity(latestVelocity);
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const y1 = useSpring(
@@ -59,9 +60,12 @@ export const TracingBeam = ({
   return (
     <motion.div
       ref={ref}
-      className={cn("relative w-full max-w-4xl mx-auto h-full", className)}
+      className={cn(
+        "relative w-full max-w-4xl mx-auto h-full overflow-y-clip",
+        className
+      )}
     >
-      <div className="absolute -left-20 top-3">
+      <div className="absolute -left-20 top-3 invisible lg:visible">
         <motion.div
           transition={{
             duration: 0.2,
@@ -81,12 +85,10 @@ export const TracingBeam = ({
               delay: 0.5,
             }}
             animate={{
-              backgroundColor:
-                scrollYProgress.get() > 0 ? "white" : "var(--emerald-500)",
-              borderColor:
-                scrollYProgress.get() > 0 ? "white" : "var(--emerald-600)",
+              backgroundColor: scrollYProgress.get() > 0 ? "white" : "#4169E1",
+              borderColor: scrollYProgress.get() > 0 ? "white" : "#4169E1",
             }}
-            className="h-2 w-2 rounded-full border border-neutral-300 bg-white"
+            className="h-2 w-2 rounded-full border border-white bg-white"
           />
         </motion.div>
         <svg
