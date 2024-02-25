@@ -16,9 +16,9 @@ export default function Home() {
         </div>
 
         {/* Intro Banner */}
-        <div className="w-full min-h-screen pt-24 lg:pt-48">
+        <div className="w-full min-h-screen pt-24 lg:pt-48 overflow-hidden">
           <MyCard />
-          {/* <MyParallax /> */}
+          <MyParallax />
         </div>
 
         {/* Career Timeline */}

@@ -71,10 +71,7 @@ export const TypewriterEffect = ({
   };
   return (
     <div
-      className={cn(
-        "text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-center",
-        className
-      )}
+      className={cn("text-2xl lg:text-5xl font-bold text-center", className)}
     >
       {renderWords()}
       <motion.span

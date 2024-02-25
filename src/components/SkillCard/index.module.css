@@ -1,0 +1,10 @@
+.bubble {
+  @apply flex items-center justify-center min-w-fit mb-2 pr-4 select-none
+  cursor-default
+  transition-all duration-300 hover:-translate-y-2;
+  height: 1.75rem;
+}
+
+.label {
+  @apply dark:text-white font-semibold text-xs;
+}
