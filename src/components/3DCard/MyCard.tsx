@@ -10,14 +10,14 @@ import { LINKEDIN_URL, RESUME_URL } from "data/constants";
 export function MyCard() {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 dark:bg-black relative group/card dark:hover:shadow-2xl dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+      <CardBody className="bg-gray-50 dark:bg-black dark:bg-opacity-20 relative group/card dark:hover:shadow-2xl dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
         <CardItem translateZ="100" className="w-full">
           <Image
             src="/pp.png"
-            height="1000"
-            width="1000"
+            height="240"
+            width="240"
             draggable={false}
-            className="h-60 w-60 object-cover rounded-full group-hover/card:shadow-xl"
+            className="h-32 w-32 object-cover rounded-full group-hover/card:shadow-xl"
             alt="thumbnail"
           />
         </CardItem>
@@ -57,19 +57,31 @@ export function MyCard() {
             <CardItem
               translateZ={50}
               as="button"
-              className="px-4 py-2 mx-2 rounded-xl dark:bg-white dark:text-black text-xs font-bold"
+              className="p-1 mx-1 rounded-full dark:bg-white dark:text-black text-xs font-bold"
             >
               <a href={RESUME_URL} target="_blank">
-                Resume
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  viewBox="0 -960 960 960"
+                  width="24"
+                >
+                  <path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z" />
+                </svg>
               </a>
             </CardItem>
             <CardItem
               translateZ={50}
               as="button"
-              className="px-4 py-2 mx-2 rounded-xl bg-blue-700 text-white text-xs font-bold"
+              className="p-2 mx-1 rounded-xl text-white text-xs font-bold"
             >
               <a href={LINKEDIN_URL} target="_blank">
-                LinkedIn
+                <Image
+                  width={24}
+                  height={24}
+                  src="/icons/linkedin.webp"
+                  alt="linkedin"
+                />
               </a>
             </CardItem>
           </div>

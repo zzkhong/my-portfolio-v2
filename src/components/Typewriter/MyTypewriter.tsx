@@ -14,8 +14,9 @@ export function MyTypewriter() {
       text: "Journey",
     },
   ];
+
   return (
-    <div className="flex flex-col items-center justify-center h-[20rem] ">
+    <div className="flex flex-col items-center justify-center">
       <TypewriterEffect words={words} />
     </div>
   );

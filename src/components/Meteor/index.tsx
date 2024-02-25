@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import { cn } from "utils/cn";
+import useWindowDimensions from "utils/useWindowDimensions";
 
 export const Meteors = ({
   number,
@@ -9,8 +12,11 @@ export const Meteors = ({
   className?: string;
 }) => {
   const meteors = new Array(number || 20).fill(true);
+  const { width } = useWindowDimensions();
+  let dWidth = width || 320;
+
   return (
-    <>
+    <div className="overflow-x-hidden">
       {meteors.map((el, idx) => (
         <span
           key={"meteor" + idx}
@@ -21,12 +27,13 @@ export const Meteors = ({
           )}
           style={{
             top: 0,
-            left: Math.floor(Math.random() * (1080 - -1080) + -1080) + "px",
+            left:
+              Math.floor(Math.random() * (dWidth - -dWidth) + -dWidth) + "px",
             animationDelay: Math.random() * (0.8 - 0.2) + 0.2 + "s",
             animationDuration: Math.floor(Math.random() * (10 - 2) + 2) + "s",
           }}
         ></span>
       ))}
-    </>
+    </div>
   );
 };

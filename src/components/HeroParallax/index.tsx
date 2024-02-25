@@ -57,7 +57,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="py-20 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="py-20 antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
 
@@ -103,11 +103,7 @@ export const HeroParallax = ({
 };
 
 export const Header = () => {
-  return (
-    <div className="relative mx-auto px-4 w-full left-0 top-0">
-      <MyCard />
-    </div>
-  );
+  return <div className="relative mx-auto px-4 w-full left-0 top-0"></div>;
 };
 
 export const PortfolioCard = ({
@@ -133,8 +129,8 @@ export const PortfolioCard = ({
     >
       <Image
         src={portfolio.thumbnail}
-        height="600"
-        width="600"
+        height="300"
+        width="300"
         draggable={false}
         className="object-cover object-left-top absolute h-full w-full inset-0"
         alt={portfolio.title}

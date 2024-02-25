@@ -11,13 +11,11 @@ export function MyBeam() {
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
         {history.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">
-            <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
-              {item.badge}
+            <h2 className="text-white text-2xl font-bold w-fit py-1 mb-2">
+              {item.title}
             </h2>
 
-            <p className={twMerge("text-xl mb-4")}>{item.title}</p>
-
-            <div className="text-sm prose prose-sm dark:prose-invert">
+            <div className="text-sm mb-4 prose prose-sm dark:prose-invert">
               {item?.image && (
                 <Image
                   src={item.image}
@@ -29,6 +27,8 @@ export function MyBeam() {
               )}
               {item.description}
             </div>
+
+            <p className={twMerge("text-sm mb-4")}>{item.badge}</p>
           </div>
         ))}
       </div>
