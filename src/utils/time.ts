@@ -1,0 +1,6 @@
+export function getDayOfWeek(): number {
+  const today = new Date();
+  const dayOfWeek = today.getDay() - 1;
+
+  return dayOfWeek < 0 ? 0 : dayOfWeek;
+}
