@@ -39,9 +39,9 @@ export function MyBeam() {
                 <Image
                   src={item.image}
                   alt="blog thumbnail"
-                  height="1000"
-                  width="1000"
-                  className="rounded-lg mb-10 object-cover"
+                  height="300"
+                  width="500"
+                  className="rounded-lg max-w-80 mb-10 object-cover mx-auto"
                 />
               )}
               {item.description}

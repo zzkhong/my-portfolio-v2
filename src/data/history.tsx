@@ -5,13 +5,10 @@ export const history = [
     period: "Oct 2023 - Present",
     position: "Senior Software Engineer",
     description: (
-      <>
-        <p>In Progress</p>
-      </>
+      <>First digital bank in Malaysia, still working in progress...</>
     ),
     skills: ["Go", "gRPC", "AWS", "Azure", "Web Developent", "Appian"],
-    image:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/photo/gxbank.png",
   },
   {
     logo: "/icons/binance.png",
@@ -19,16 +16,19 @@ export const history = [
     period: "Nov 2022 - July 2023",
     position: "Web Engineer",
     description: (
-      <ul>
-        <li>Involved in region expansion on Binance Card Program</li>
-        <li>
-          Development of Binance Merchant Platform for web app and web portal
-        </li>
-      </ul>
+      <>
+        Largest crypto exchange on the world!
+        <ul className="pt-4">
+          <li>1. Involved in region expansion on Binance Card Program</li>
+          <li>
+            2. Development of Binance Merchant Platform for web app and web
+            portal
+          </li>
+        </ul>
+      </>
     ),
     skills: ["React", "Mobile Development", "Web Developent"],
-    image:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/photo/binance.png",
   },
   {
     logo: "/icons/paywatch.png",
@@ -37,18 +37,19 @@ export const history = [
     position: "Full-Stack Engineer",
     description: (
       <>
-        <ul>
+        Launching Paywatch from scratch is a huge challenge!
+        <ul className="pt-4">
           <li>
-            Launched Paywatch Mobile App from scratch which supports multiple
+            1. Launched Paywatch Mobile App from scratch which supports multiple
             regions (Malaysia, HongKong)
           </li>
           <li>
-            Worked with UX/UI designer and launched webpage to promote company
-            core business and customer acquisition
+            2. Worked with UX/UI designer and launched webpage to promote
+            company core business and customer acquisition
           </li>
           <li>
-            Integration of analytics tools and CRM tools for marketing purposes
-            (campaign alert, user reminder)
+            3. Integration of analytics tools and CRM tools for marketing
+            purposes (campaign alert, user reminder)
           </li>
         </ul>
       </>
@@ -60,8 +61,7 @@ export const history = [
       "Mobile Development",
       "Web Developent",
     ],
-    image:
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/photo/paywatch.jpg",
   },
   {
     logo: "/icons/upstack.webp",
@@ -70,25 +70,25 @@ export const history = [
     position: "Web & Mobile Developer",
     description: (
       <>
-        <ul>
+        A software house full of talents!
+        <ul className="pt-4">
           <li>
-            Launched Paywatch Mobile App from scratch which supports multiple
-            regions (Malaysia, HongKong)
+            1. Worked with BE engineers on Daikin GO and MY Acson, integrating
+            marketing features
           </li>
           <li>
-            Worked with UX/UI designer and launched webpage to promote company
-            core business and customer acquisition
+            2. Worked on Wine Catalog App, listing and recommending users about
+            wine preferences and differences
           </li>
           <li>
-            Integration of analytics tools and CRM tools for marketing purposes
-            (campaign alert, user reminder)
+            3. Launched a Job Seeker Mobile App as well as the promotional web
+            page to promote the app
           </li>
         </ul>
       </>
     ),
     skills: ["React", "React-Native", "Mobile Development", "Web Developent"],
-    image:
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/photo/upstack.jpg",
   },
   {
     logo: "/icons/sony.png",
@@ -97,25 +97,25 @@ export const history = [
     position: "UI/UX, Software Engineer",
     description: (
       <>
-        <ul>
+        Huge company with huge product impact!
+        <ul className="pt-4">
           <li>
-            Launched Paywatch Mobile App from scratch which supports multiple
-            regions (Malaysia, HongKong)
+            1. Launched TV Home UI which supports a variety of broadcasting
+            applications (YouTube, Netflix, Amazon, All4, etc.)
           </li>
           <li>
-            Worked with UX/UI designer and launched webpage to promote company
-            core business and customer acquisition
+            2. Perform reverse engineering on Android TV application to sync TV
+            video playback for marketing demo purposes
           </li>
           <li>
-            Integration of analytics tools and CRM tools for marketing purposes
-            (campaign alert, user reminder)
+            3. Maintaining and performing QA on ReactJS Application ~ Linux
+            Freeview (UK Broadcasting Platform)
           </li>
         </ul>
       </>
     ),
     skills: ["Java", "React", "Mobile Development", "Web Developent"],
-    image:
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/photo/sony.webp",
   },
   {
     logo: "/icons/werebits.webp",
@@ -124,24 +124,11 @@ export const history = [
     position: "Internship",
     description: (
       <>
-        <ul>
-          <li>
-            Launched Paywatch Mobile App from scratch which supports multiple
-            regions (Malaysia, HongKong)
-          </li>
-          <li>
-            Worked with UX/UI designer and launched webpage to promote company
-            core business and customer acquisition
-          </li>
-          <li>
-            Integration of analytics tools and CRM tools for marketing purposes
-            (campaign alert, user reminder)
-          </li>
-        </ul>
+        My Software Engineering journey starts here! where i launched AttendInk
+        and polish my PHP skills
       </>
     ),
     skills: ["Java", "PHP Laravel", "Mobile Development", "Web Developent"],
-    image:
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/icons/werebits.webp",
   },
 ];
