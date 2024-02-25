@@ -22,7 +22,7 @@ export const Meteors = ({
           key={"meteor" + idx}
           className={cn(
             "animate-meteor-effect absolute top-0 h-0.5 w-0.5 rounded-[9999px] bg-slate-500 shadow-[0_0_0_1px_#ffffff10] rotate-[270deg]",
-            "before:content-[''] before:absolute before:top-0 before:transform before:-translate-y-[50%] before:w-[50px] before:h-[1px] before:bg-gradient-to-r before:from-[#64748b] before:to-transparent",
+            "before:content-[''] before:absolute before:top-0 before:transform before:-translate-y-[50%] before:w-[50px] before:h-[1px] before:bg-gradient-to-r before:from-[#00ffff75] before:to-transparent",
             className
           )}
           style={{
