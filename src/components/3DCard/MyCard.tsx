@@ -5,7 +5,7 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from ".";
 import { getDayOfWeek } from "utils/time";
 import { quotes } from "data/quotes";
-import { LINKEDIN_URL, RESUME_URL } from "data/constants";
+import { GITHUB_URL, LINKEDIN_URL, RESUME_URL } from "data/constants";
 
 export function MyCard() {
   return (
@@ -53,18 +53,18 @@ export function MyCard() {
             Code, Build, & Repeat
           </CardItem>
 
-          <div>
+          <div className="flex flex-row items-center">
             <CardItem
               translateZ={50}
               as="button"
-              className="p-1 mx-1 rounded-full dark:bg-white dark:text-black text-xs font-bold"
+              className="p-1 mr-2 rounded-full dark:bg-white dark:text-black text-xs font-bold"
             >
               <a href={RESUME_URL} target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  height="24"
+                  height="16"
                   viewBox="0 -960 960 960"
-                  width="24"
+                  width="16"
                 >
                   <path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z" />
                 </svg>
@@ -73,7 +73,7 @@ export function MyCard() {
             <CardItem
               translateZ={50}
               as="button"
-              className="p-2 mx-1 rounded-xl text-white text-xs font-bold"
+              className="p-2 rounded-xl text-white text-xs font-bold"
             >
               <a href={LINKEDIN_URL} target="_blank">
                 <Image
@@ -83,6 +83,25 @@ export function MyCard() {
                   src="/icons/linkedin.webp"
                   alt="linkedin"
                 />
+              </a>
+            </CardItem>
+            <CardItem
+              translateZ={50}
+              as="button"
+              className="p-2 mx-1 rounded-xl text-white text-xs font-bold"
+            >
+              <a href={GITHUB_URL} target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 0a12 12 0 00-3.809 23.383c.603.111.823-.261.823-.578 0-.285-.01-1.036-.015-2.031-3.341.723-4.042-1.613-4.042-1.613-.546-1.383-1.332-1.75-1.332-1.75-1.089-.742.083-.727.083-.727 1.205.086 1.838 1.238 1.838 1.238 1.07 1.835 2.809 1.305 3.495.998.108-.777.418-1.305.76-1.605-2.665-.301-5.466-1.332-5.466-5.93 0-1.31.468-2.383 1.236-3.223-.124-.303-.536-1.524.117-3.176 0 0 1.007-.322 3.3 1.232.958-.267 1.982-.399 3-.405 1.018.006 2.042.138 3 .405 2.291-1.554 3.297-1.232 3.297-1.232.655 1.652.242 2.873.118 3.176.77.84 1.234 1.913 1.234 3.223 0 4.61-2.804 5.625-5.473 5.92.43.369.818 1.102.818 2.219 0 1.604-.015 2.896-.015 3.287 0 .32.216.694.831.575A12.004 12.004 0 0012 0z"
+                  />
+                </svg>
               </a>
             </CardItem>
           </div>
