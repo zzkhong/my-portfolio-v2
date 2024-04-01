@@ -130,7 +130,7 @@ export const PortfolioCard = ({
       <Image
         src={portfolio.thumbnail}
         height="300"
-        width="300"
+        width="530"
         draggable={false}
         className="object-cover object-left-top absolute h-full w-full inset-0"
         alt={portfolio.title}
